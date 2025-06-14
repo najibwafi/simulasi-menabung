@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("PROGRAM HITUNG TABUNGAN")
-i=1
+i=0
 total=0
 tabungan=(st.number_input("masukan tabungan anda :",
                           min_value=1,
@@ -25,7 +25,7 @@ if st.button("hasil tabungan anda klik disini"):
     while i<lama_waktu:
       total=total+tabungan
       total=total*(1+persen_bunga)
-      st.success(f" tabungan anda pada bulanke {i} adalah :Rp. {int(total)}")
+      st.success(f" tabungan anda pada bulanke {i+1} adalah :Rp. {int(total)}")
       i=i+1
 
 st.success(f"total tabungan anda pda bulan terakhir adalah :Rp. {int(total)}")
