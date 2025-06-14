@@ -25,6 +25,7 @@ if st.button("hasil tabungan anda klik disini"):
     while i<lama_waktu:
       total=total+tabungan
       total=total*(1+persen_bunga)
+      st.success(f" tabungan anda pada bulanke {i} adalah :Rp. {int(total)}")
       i=i+1
-      st.success(f" tabungan anda pada bulanke {i+1} adalah :Rp. {int(total)}")
+
 st.success(f"total tabungan anda pda bulan terakhir adalah :Rp. {int(total)}")
